@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Road Racer (Mobile Game)</title>
+  <meta name="description" content="Road Racer — mobile endless driving game. Replace placeholders with your text and images." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa6b2; --accent:#ff7a18; --glass: rgba(255,255,255,0.03);
+      --radius:12px; --maxw:980px; color-scheme:dark
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{font-weight:800;font-size:18px}
+    nav a{margin-left:18px;color:var(--muted);font-size:14px}
+    main{display:grid;gap:28px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
+    .hero h1{margin:0;font-size:clamp(22px,4vw,34px)}
+    .hero p{margin:10px 0;color:var(--muted);line-height:1.5}
+    .cta{display:flex;gap:12px;margin-top:12px}
+    .btn{background:var(--accent);color:#0b0b0b;padding:10px 14px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(255,122,24,0.12)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:16px;box-shadow:0 6px 22px rgba(2,6,23,0.6)}
+    .profile{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffb470);display:flex;align-items:center;justify-content:center;color:#0b0b0b;font-weight:800;font-size:20px}
+    .meta{color:var(--muted);font-size:14px}
+    .project-hero{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+    .device{background:linear-gradient(180deg,#081425,#091828);border-radius:20px;padding:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(8,12,20,0.6)}
+    .device img{width:220px;border-radius:28px;display:block;max-width:100%}
+    .badges{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    .badge{display:inline-block;background:#0b1220;color:white;padding:8px 12px;border-radius:10px;font-size:13px;border:1px solid rgba(255,255,255,0.03)}
+    .screenshot-row{display:flex;gap:10px;margin-top:14px;overflow-x:auto;padding-bottom:6px}
+    .screenshot-row img{width:120px;height:240px;object-fit:cover;border-radius:12px;border:1px solid var(--glass);background:linear-gradient(180deg,#06101a,#07121c)}
+    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    footer{margin-top:30px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+    @media (max-width:880px){.hero,.grid-2,.project-hero{grid-template-columns:1fr}.device img{width:160px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Your Name — Mobile Dev</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div>
+          <div class="profile card" style="padding:14px">
+            <div class="avatar">YN</div>
+            <div>
+              <div style="font-weight:700">Your Name</div>
+              <div class="meta">Mobile Game Developer — gameplay, UI, monetization</div>
+            </div>
+          </div>
+
+          <h1 style="margin-top:18px">[TAGLINE — replace me]</h1>
+          <p>Короткое описание Road Racer. Замените этот текст на ваше однострочное описание игры (цель, фишка).</p>
+
+          <div class="cta">
+            <a class="btn" href="#work">See Road Racer</a>
+            <a class="btn secondary" href="#contact">Hire / Contact</a>
+          </div>
+        </div>
+
+        <aside class="card" aria-labelledby="contact-heading">
+          <h4 id="contact-heading" style="margin:0 0 8px">Contact</h4>
+          <div class="meta">Email: <a href="mailto:you@domain.com">you@domain.com</a></div>
+          <div class="meta" style="margin-top:8px">Location: Remote / City</div>
+          <div style="margin-top:12px">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- About / Skills -->
+      <section id="about" class="card">
+        <h2 style="margin:0 0 8px">About</h2>
+        <p class="meta" style="margin:0 0 12px">[Short bio — replace me]</p>
+        <div class="grid-2" style="margin-top:12px">
+          <div>
+            <strong>Selected skills</strong>
+            <div class="skills">
+              <span class="skill">Unity / C#</span>
+              <span class="skill">Gameplay & UI</span>
+              <span class="skill">In-app purchases</span>
+              <span class="skill">Firebase / Analytics</span>
+              <span class="skill">CI (Fastlane / GitHub Actions)</span>
+              <span class="skill">Optimization & profiling</span>
+            </div>
+
+            <div style="margin-top:14px">
+              <strong>What I handle</strong>
+              <ul style="margin:8px 0 0 18px;color:var(--muted)">
+                <li>Gameplay systems & controls</li>
+                <li>Performance & memory optimization</li>
+                <li>Monetization, A/B testing, store submission</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <strong>Availability</strong>
+            <div class="card" style="margin-top:8px;padding:12px">
+              <div style="font-weight:700">Open for freelance & contract work</div>
+              <div class="meta" style="margin-top:6px">Available from: YYYY-MM</div>
+              <div style="margin-top:8px"><a class="btn" href="#contact">Let's talk</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Work -->
+      <section id="work">
+        <h2 style="margin:0 0 12px">Featured project — Road Racer</h2>
+        <div class="project-hero card">
+          <div class="project-info">
+            <h3>[MyApp Title] — [one-line value prop]</h3>
+            <p class="meta">[Short case description: problem → approach → impact. Replace me]</p>
+
+            <div class="metrics" aria-hidden="false">
+              <div><strong>Downloads</strong> — [e.g., 20k+]</div>
+              <div><strong>Rating</strong> — [e.g., 4.5]</div>
+              <div><strong>Retention</strong> — [e.g., 25% 7-day]</div>
+            </div>
+
+            <div class="badges" style="margin-top:12px">
+              <a href="#" class="badge" title="App Store">App Store</a>
+              <a href="#" class="badge" title="Google Play">Google Play</a>
+              <a href="#" class="badge" title="Gameplay video">Gameplay video</a>
+              <a href="#" class="badge" title="Source Code (if public)">Repo</a>
+            </div>
+
+            <p style="margin-top:12px;color:var(--muted)">Case study (short): Simplified controls, improved onboarding, balanced economy — replace with real results.</p>
+
+            <div style="margin-top:12px">
+              <strong>Role & responsibilities</strong>
+              <ul style="margin:8px 0 0 18px;color:var(--muted)">
+                <li>Solo / lead developer — gameplay, UI, progression</li>
+                <li>Performance profiling and memory fixes</li>
+                <li>Analytics instrumentation and store release</li>
+              </ul>
+            </div>
+
+            <div class="screenshot-row" style="margin-top:14px">
+              <figure style="margin:0">
+                <img src="screenshots/roadracer_garage.jpg" alt="Garage / customization screenshot (placeholder)" />
+                <figcaption style="color:var(--muted);font-size:13px;margin-top:6px">Garage — customize cars (replace image)</figcaption>
+              </figure>
+
+              <figure style="margin:0">
+                <img src="screenshots/roadracer_pause.jpg" alt="Pause menu screenshot (placeholder)" />
+                <figcaption style="color:var(--muted);font-size:13px;margin-top:6px">Pause menu / in-game menu (replace image)</figcaption>
+              </figure>
+
+              <figure style="margin:0">
+                <img src="screenshots/roadracer_gameplay.jpg" alt="Gameplay screenshot (placeholder)" />
+                <figcaption style="color:var(--muted);font-size:13px;margin-top:6px">Gameplay — road & traffic (replace image)</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="device">
+            <img src="screenshots/roadracer_phone_preview.jpg" alt="Road Racer phone preview (placeholder)" />
+            <div style="margin-top:10px;color:var(--muted);font-size:13px">Tap to view full case study</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="card">
+        <h2 style="margin:0 0 8px">Contact / Hire</h2>
+        <p class="meta" style="margin:0 0 12px">Email me at <a href="mailto:you@domain.com">you@domain.com</a> — or use the form below.</p>
+
+        <form action="#" onsubmit="alert('Replace this with a working form or Netlify/Formspree handler.');return false" style="display:grid;gap:8px;max-width:680px">
+          <input type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+          <input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+          <textarea placeholder="Message (project details, timeline, budget)" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="btn" type="submit">Send message</button>
+            <div class="meta">or email: <a href="mailto:you@domain.com">you@domain.com</a></div>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> Your Name</div>
+        <div class="meta">Built with care — <a href="https://github.com/qymbatb13/road-racer-portfolio">GitHub</a></div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('img').forEach(img=>{
+      img.onerror = ()=> { img.onerror = null; img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800"><rect width="100%" height="100%" fill="#081423"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#9aa6b2" font-size="18">Replace with screenshot</text></svg>'); };
+    });
+  </script>
+</body>
+</html>
